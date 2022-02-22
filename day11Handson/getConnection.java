@@ -14,7 +14,7 @@ public class getConnection {
         	System.out.println("Driver is loading...");
         	
         	//step2
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels","root","pavan1816");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels","root","root");
             System.out.println("Connecting to DB...");
         }
         catch(Exception e)
