@@ -1,40 +1,47 @@
 package com.org.gen.day3HandsOn;
 abstract class Marks
 {
-	
-	abstract void getPercentage(int x);
-	//abstract void getPercentage(int a,int b,int c);
+	void percentage() {}
 }
-class studa extends Marks
+class StudentA extends Marks
 {
-	studa(int a)
+	int s1,s2,s3;
+	float p;
+	StudentA(int s1, int s2, int s3)
 	{
-		getPercentage(a);
+		this.s1=s1;
+		this.s2=s2;
+		this.s3=s3;
 	}
-   void getPercentage(int a)
-   {
-	   System.out.println("%:"+a);
-   }
+	void percentage()
+	{
+		p=(s1+s2+s3)/3;
+		System.out.println("Percentage marks for student A:"+p);
+	}
 }
-class studb extends Marks
+class StudentB extends Marks
 {
-	studb(int b)
+	int s1,s2,s3,s4;
+	float p;
+	StudentB(int s1, int s2, int s3, int s4)
 	{
-		getPercentage(b);
+		this.s1=s1;
+		this.s2=s2;
+		this.s3=s3;
+		this.s4=s4;
 	}
-   void getPercentage(int b)
-   {
-	   System.out.println("%:"+b);
-   }
+	void percentage()
+	{
+		p=(s1+s2+s3+s4)/4;
+		System.out.println("Percentage marks for student B:"+p);
+	}
 }
-
-public class ques3 {
-
+public class Q3 {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		studa s1=new studa(45);
-		studb s2=new studb(35);
-
+		StudentA s1 =new StudentA(68,94,80);
+		s1.percentage();
+		StudentB s2 =new StudentB(83,74,60, 78);
+		s2.percentage();
 	}
 
 }
