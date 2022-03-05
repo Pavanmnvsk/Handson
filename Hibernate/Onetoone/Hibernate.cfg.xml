@@ -1,0 +1,25 @@
+<hibernate-configuration>
+
+<session-factory>
+
+<property name="hibernate.hbm2ddl.auto">create</property>
+
+<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect </property>
+
+<property name="hibernate.connection.url">jdbc:mysql://localhost:3306 /classicmodels</property>
+
+<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver </property>
+
+<property name="connection.username">root</property>
+
+<property name="connection.password">pavan1816</property>
+
+<property name="show_sql">true</property>
+
+<mapping class="com.org.onetoone.Employee"/>
+
+<mapping class="com.org.onetoone.Address"/>
+
+</session-factory>
+
+</hibernate-configuration>
